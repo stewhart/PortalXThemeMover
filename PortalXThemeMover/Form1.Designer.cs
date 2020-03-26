@@ -165,9 +165,9 @@
             this.LabelUser2.AutoSize = true;
             this.LabelUser2.Location = new System.Drawing.Point(8, 240);
             this.LabelUser2.Name = "LabelUser2";
-            this.LabelUser2.Size = new System.Drawing.Size(57, 13);
+            this.LabelUser2.Size = new System.Drawing.Size(60, 13);
             this.LabelUser2.TabIndex = 7;
-            this.LabelUser2.Text = "UserName";
+            this.LabelUser2.Text = "UserName:";
             this.LabelUser2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label3
@@ -185,9 +185,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(5, 70);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 13);
+            this.label2.Size = new System.Drawing.Size(60, 13);
             this.label2.TabIndex = 5;
-            this.label2.Text = "UserName";
+            this.label2.Text = "UserName:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label1
