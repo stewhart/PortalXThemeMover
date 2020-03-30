@@ -43,12 +43,22 @@ namespace PortalXThemeMover
         public void QuerySourceTemplates()
         {
             StarRezApiClient sourceClient = new StarRezApiClient(textBoxRestAdd1.Text, textBoxUser1.Text, textBoxPass1.Text);
-            var SourceTemplates = sourceClient.Query("SELECT * FROM PortalTheme");
-            String test = SourceTemplates.ElementAt(2).Description.ToString();
-            
-            globalclass.ThemeType = UpdateDropDown(SourceTemplates);
-            Console.WriteLine("test");
-            
+            try
+            {
+                var SourceTemplates = sourceClient.Query("SELECT * FROM PortalTheme");
+
+
+
+                String test = SourceTemplates.ElementAt(2).Description.ToString();
+
+                globalclass.ThemeType = UpdateDropDown(SourceTemplates);
+                Console.WriteLine("test");
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message, "Error");
+            }
+
         }
 
         public Dictionary<string, string> UpdateDropDown(dynamic[] ThemesToShow)
